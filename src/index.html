@@ -1,11 +1,262 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Portfolio</title>
 </head>
 <body>
+    <header class="header">
+        <div class="header__box">
+            <div class="container">
+                <nav class="header__navigation">
+                    <ul class="header__nav">
+                        <li class="header__item">
+                            <a href="#" class="header__link">Обо мне</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="#" class="header__link">Портфолио</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="#" class="header__link">Этапы работ</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="#" class="header__link">Цены</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="#" class="header__link">Обратная связь</a>
+                        </li>
+                    </ul>
+                    <div class="header__buttons">
+                        <a href="tel:+79237777777" class="header__link header__link-phone">8 923 777-77-77</a>
+                        <a href="mailto:alexdev@gmail.com" class="header__link header__link-mail">alexdev@gmail.com</a>
+                    </div>
+                </nav>                
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="about">                
+            <div class="container">
+                <div class="about__bg">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="about__text">
+                    <h1 class="title">
+                        <span class="title__span">
+                            Александр Антропов
+                        </span>
+                        web-разработчик
+                    </h1>
+                </div>
+                <div class="about__networks">
+                    <button class="about__btn-popup">Обсудить проект</button>
+                    <ul class="socials">
+                        <li class="socials__list">
+                            <a href="#" class="socials__link">Vk</a>
+                        </li>
+                        <li class="socials__list">
+                            <a href="#" class="socials__link">Instagram</a>
+                        </li>
+                        <li class="socials__list">
+                            <a href="#" class="socials__link">Linkedin</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="about__skills">
+                    <div class="about__item">
+                        <span class="about__title about__title-up">FRONT-END</span>
+                        <p class="description description__size-s">HTML+CSS+JS кодирование дизайнов любой сложности</p>
+                    </div>
+                    <div class="about__item">
+                        <span class="about__title about__title-up">Back-end</span>
+                        <p class="description description__size-s">Разработка сложной back-end логики для готового front-end</p>
+                    </div>
+                    <div class="about__item">
+                        <span class="about__title about__title-up">WORDPRESS</span>
+                        <p class="description description__size-s">Разработка сайтов - от блога до интернет магазина</p>
+                    </div>
+                    <div class="about__item">
+                        <span class="about__title about__title-up">SEO продвижение</span>
+                        <p class="description description__size-s">Качественное улучшение позиций сайта в поисковой выдаче</p>
+                    </div>
+                </div>
+                <div class="about__description">
+                    <div class="about__box box">
+                        <div class="box__item">
+                            <h2 class="subtitle">Обо мне</h2>
+                        </div>
+                        <div class="box__item">
+                            <p class="description description__size-l">Создаю только эффективные решения, которые работают на результат: от&nbsp;одностраничных сайтов, до крупных интернет-порталов.</p>
+                        </div>                        
+                    </div>
+                    <div class="about__advantages">
+                        <div class="about__item about__item_advantages">
+                            <span class="about__title about__title_advantages">Контроль</span>
+                            <p class="description description__size-s">Предоставление результатов на&nbsp;каждом этапе работы с&nbsp;возможностью внести правки</p>
+                        </div>
+                        <div class="about__item about__item_advantages">
+                            <span class="about__title about__title_advantages">Ответственность</span>
+                            <p class="description description__size-s">Фриланс как основная деятельность, что означает полную отдачу в&nbsp;процессе работы над заказом</p>
+                        </div>
+                        <div class="about__item about__item_advantages">
+                            <span class="about__title about__title_advantages">Исполнительность</span>
+                            <p class="description description__size-s">Внимательность ко всем требованиям заказчика и&nbsp;прояснение любых моментов</p>
+                        </div>
+                        <div class="about__item about__item_advantages">
+                            <span class="about__title about__title_advantages">Качество</span>
+                            <p class="description description__size-s">Высокое качество как графических материалов, так и внутренних алгоритмов работы сайта</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about__algorithm">
+                    <div class="about__step">
+                        <h3 class="about__step-title subtitle_3">
+                            <span class="about__step-num">01</span>
+                            Вы заказываете сайт
+                        </h3>
+                        <p class="description description__size-m">Связываетесь со мной по телефону или через заявку на сайте</p>
+                    </div>
+                    <div class="about__step">
+                        <h3 class="about__step-title subtitle_3">
+                            <span class="about__step-num">02</span>
+                            Обговариваем детали
+                        </h3>
+                        <p class="description description__size-m">Созваниваемся или списываемся любым удобным для вас способом</p>
+                    </div>
+                    <div class="about__step">
+                        <h3 class="about__step-title subtitle_3">
+                            <span class="about__step-num">03</span>
+                            Этап программирования
+                        </h3>
+                        <p class="description description__size-m">Верстаю сайт по вашему проекту пиксель в пиксель</p>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+        <section class="portfolio">
+            <div class="container">
+                <div class="portfolio__text">
+                    <h1 class="title">
+                        Портфолио
+                    </h1>
+                </div>
+            </div>
+            <div class="portfolio-case">
+                <div class="container">
+                    <div class="portfolio-case__item box">
+                        <div class="box__item">
+                            <div class="portfolio-case__text">
+                                <h2 class="subtitle subtitle_l">
+                                    Agata Bielen
+                                </h2>
+                            </div>                            
+                            <ul class="portfolio-case__tasks">
+                                <li class="portfolio-case__list">верстка по макету из Figma</li>
+                                <li class="portfolio-case__list">наполнение сайта контентом</li>
+                                <li class="portfolio-case__list">внедрена функция добавления видео</li>
+                            </ul>
+                            <p class="portfolio-case__time-work description description__size-m">Затрачено времени: 5 рабочих дней</p>
+                        </div>
+                        <div class="portfolio-case__img portfolio-case__img-1 box__item">                                
+                        </div>
+                    </div>      
+                    <div class="portfolio-case__item box">
+                        <div class="box__item">
+                            <div class="portfolio-case__text">
+                                <h2 class="subtitle subtitle_l">
+                                    Agata Bielen
+                                </h2>
+                            </div> 
+                            <ul class="portfolio-case__tasks">
+                                <li class="portfolio-case__list">верстка по макету из Figma</li>
+                                <li class="portfolio-case__list">наполнение сайта контентом</li>
+                                <li class="portfolio-case__list">внедрена функция добавления видео</li>
+                            </ul>
+                            <p class="portfolio-case__time-work description description__size-m">Затрачено времени: 5 рабочих дней</p>
+                        </div>
+                        <div class="portfolio-case__img portfolio-case__img-2 box__item">                                
+                        </div>
+                    </div> 
+                </div>
+            </div>
+            <div class="container">
+                <div class="portfolio-benefit">
+                    <div class="portfolio-benefit__box">
+                        <div class="portfolio-benefit__text">
+                            <h3 class="subtitle subtitle_3 subtitle_l">Помимо создания сайтов и посадочных страниц я занимаюсь: настройкой контекстной рекламы в системах Яндекс.Директ и Google AdWords, а так же поисковым продвижением сайтов</h3>
+                        </div>
+                    </div>
+                    <div class="portfolio-benefit__grid">
+                        <div class="portfolio-benefit__item">
+                            <img class="portfolio-benefit__img" src="/src/img/svg/money.svg" alt="money">
+                            <div class="portfolio-benefit__item-text">
+                                <span class="portfolio-benefit__title">FRONT-END</span>
+                                <div class="portfolio-benefit__description">
+                                    <p class="description description__size-s">Ничего лишнего, без переплат, 100% отработка ваших денег</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-benefit__item">
+                            <img class="portfolio-benefit__img" src="/src/img/svg/money.svg" alt="money">
+                            <div class="portfolio-benefit__item-text">
+                                <span class="portfolio-benefit__title">FRONT-END</span>
+                                <div class="portfolio-benefit__description">
+                                    <p class="description description__size-s">Это моя основная деятельность, создано более 150+ сайтов</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-benefit__item">
+                            <img class="portfolio-benefit__img" src="/src/img/svg/money.svg" alt="money">
+                            <div class="portfolio-benefit__item-text">
+                                <span class="portfolio-benefit__title">FRONT-END</span>
+                                <div class="portfolio-benefit__description">
+                                    <p class="description description__size-s">Создание сайта любой сложности в самые сжатые сроки</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-benefit__item">
+                            <img class="portfolio-benefit__img" src="/src/img/svg/money.svg" alt="money">
+                            <div class="portfolio-benefit__item-text">
+                                <span class="portfolio-benefit__title">FRONT-END</span>
+                                <div class="portfolio-benefit__description">
+                                    <p class="description description__size-s">Не теряюсь и не проматываю сроки. Подхожу ответственно</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-benefit__item">
+                            <img class="portfolio-benefit__img" src="/src/img/svg/money.svg" alt="money">
+                            <div class="portfolio-benefit__item-text">
+                                <span class="portfolio-benefit__title">FRONT-END</span>
+                                <div class="portfolio-benefit__description">
+                                    <p class="description description__size-s">HTML код без всего лишнего, плюс адаптив под все устройства</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-benefit__item">
+                            <img class="portfolio-benefit__img" src="/src/img/svg/money.svg" alt="money">
+                            <div class="portfolio-benefit__item-text">
+                                <span class="portfolio-benefit__title">FRONT-END</span>
+                                <div class="portfolio-benefit__description">
+                                    <p class="description description__size-s">Быстро устраню любую проблему на вашем сайте</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>      
+    </main>
 </body>
 </html>
