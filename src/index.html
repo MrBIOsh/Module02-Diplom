@@ -39,19 +39,28 @@
     <main>
         <section class="about">                
             <div class="container">
-                <div class="about__bg">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
+                <div class="about__bg bg">
+                    <div class="bg__item"></div>
+                    <div class="bg__item"></div>
+                    <div class="bg__item"></div>
+                    <div class="bg__item"></div>
+                    <div class="bg__item"></div>
+                    <div class="bg__item"></div>
+                    <div class="bg__item"></div>
+                    <div class="bg__item"></div>
+                    <div class="bg__item"></div>
+                    <div class="bg__item"></div>
+                    <div class="bg__item"></div>
                 </div>
                 <div class="about__text">
+                    <div class="figures">
+                        <svg class="figures__triangle">
+                            <polygon points="33,0 66,71 0,71"></polygon>
+                        </svg>
+                        <svg class="figures__circle">
+                            <circle cx="126.5" cy="126.5" r="126.5"></circle>
+                        </svg>
+                    </div>
                     <h1 class="title">
                         <span class="title__span">
                             Александр Антропов
@@ -60,7 +69,7 @@
                     </h1>
                 </div>
                 <div class="about__networks">
-                    <button class="about__btn-popup">Обсудить проект</button>
+                    <button type="button" class="btn-popup">Обсудить проект</button>
                     <ul class="socials">
                         <li class="socials__list">
                             <a href="#" class="socials__link">Vk</a>
@@ -255,8 +264,187 @@
                         </div>
                     </div>
                 </div>
+                <div class="portfolio-tech">
+                    <div class="portfolio-tech__grid">
+                        <div class="portfolio-tech__item">
+                            <img src="/src/img/svg/html.svg" alt="" class="portfolio-tech__img">
+                        </div>
+                        <div class="portfolio-tech__item">
+                            <img src="/src/img/svg/css.svg" alt="" class="portfolio-tech__img">
+                        </div>
+                        <div class="portfolio-tech__item">
+                            <img src="/src/img/svg/JS.svg" alt="" class="portfolio-tech__img">
+                        </div>
+                        <div class="portfolio-tech__item">
+                            <img src="/src/img/svg/jquery.svg" alt="" class="portfolio-tech__img">
+                        </div>
+                        <div class="portfolio-tech__item">
+                            <img src="/src/img/svg/bootstrap.svg" alt="" class="portfolio-tech__img">
+                        </div>
+                        <div class="portfolio-tech__item">
+                            <img src="/src/img/svg/php.svg" alt="" class="portfolio-tech__img">
+                        </div>
+                        <div class="portfolio-tech__item">
+                            <img src="/src/img/svg/Vue.svg" alt="" class="portfolio-tech__img">
+                        </div>
+                        <div class="portfolio-tech__item">
+                            <img src="/src/img/svg/Wordpress.svg" alt="" class="portfolio-tech__img">
+                        </div>
+                    </div>                    
+                </div>
+                <div class="portfolio-tariff">
+                    <div class="portfolio-tariff__header box">
+                        <div class="box__item">
+                            <h2 class="subtitle">Тарифы</h2>
+                        </div>
+                        <div class="box__item">
+                            <p class="description description__size-l">Представленные ниже цены зависят не&nbsp;только от того какой сайт вы хотите. Конечная цена будет озвучена после прочтения Вашего ТЗ</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-tariff__item box">
+                        <div class="portfolio-tariff__subitem">
+                            <div class="portfolio-tariff__text">
+                                <h3 class="subtitle_3 subtitle_l">Разработка<br>лэндинга или сайт визитки</h3>
+                                <p class="description description__size-m">Небольшой сайт состоящий из одной страницы</p>
+                            </div>
+                            <button type="button" class="btn-popup">Обсудить проект</button>
+                        </div>
+                        <div class="portfolio-tariff__subitem">
+                            <span class="portfolio-tariff__title">Что входит</span>
+                            <ul class="portfolio-tariff__services">
+                                <li class="portfolio-tariff__list">Сайт на CMS WordPress</li>
+                                <li class="portfolio-tariff__list">Одна посадочная страница</li>
+                                <li class="portfolio-tariff__list">От 7 дней</li>
+                            </ul>
+                            <span class="portfolio-tariff__price">От 7 000 Р</span>
+                        </div>
+                    </div>
+                    <div class="portfolio-tariff__item box">
+                        <div class="portfolio-tariff__subitem">
+                            <div class="portfolio-tariff__text">
+                                <h3 class="subtitle_3 subtitle_l">Разработка<br>лэндинга или сайт визитки</h3>
+                                <p class="description description__size-m">Небольшой сайт состоящий из одной страницы</p>
+                            </div>
+                            <button type="button" class="btn-popup">Обсудить проект</button>
+                        </div>
+                        <div class="portfolio-tariff__subitem">
+                            <span class="portfolio-tariff__title">Что входит</span>
+                            <ul class="portfolio-tariff__services">
+                                <li class="portfolio-tariff__list">Сайт на CMS WordPress</li>
+                                <li class="portfolio-tariff__list">Одна посадочная страница</li>
+                                <li class="portfolio-tariff__list">От 7 дней</li>
+                            </ul>
+                            <span class="portfolio-tariff__price portfolio-tariff__price_unactive">От 7 000 Р</span>
+                        </div>
+                    </div>
+                    <div class="portfolio-tariff__item box">
+                        <div class="portfolio-tariff__subitem">
+                            <div class="portfolio-tariff__text">
+                                <h3 class="subtitle_3 subtitle_l">Разработка<br>лэндинга или сайт визитки</h3>
+                                <p class="description description__size-m">Небольшой сайт состоящий из одной страницы</p>
+                            </div>
+                            <button type="button" class="btn-popup">Обсудить проект</button>
+                        </div>
+                        <div class="portfolio-tariff__subitem">
+                            <span class="portfolio-tariff__title">Что входит</span>
+                            <ul class="portfolio-tariff__services">
+                                <li class="portfolio-tariff__list">Сайт на CMS WordPress</li>
+                                <li class="portfolio-tariff__list">Одна посадочная страница</li>
+                                <li class="portfolio-tariff__list">От 7 дней</li>
+                            </ul>
+                            <span class="portfolio-tariff__price">От 7 000 Р</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-feedback">
+                    <div class="portfolio-feedback__header box">
+                        <div class="figures figures_feedback">
+                            <svg class="figures__triangle figures__triangle_feedback">
+                                <polygon points="33,0 66,71 0,71"></polygon>
+                            </svg>
+                            <svg class="figures__circle figures__circle_big">
+                                <circle cx="150" cy="150" r="150"></circle>
+                            </svg>
+                        </div>
+                        <div class="box__item">
+                            <h2 class="subtitle">Расскажите<br>о своем проекте</h2>
+                        </div>
+                        <div class="box__item">
+                            <p class="description description__size-l">Воспользуйтесь формой обратной связи, чтобы обсудить ваш проект, заполните все поля, и я свяжусь<br>с вами в ближайшее время</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-feedback__item box">
+                        <div class="portfolio-feedback__socials">
+                            <ul class="socials">
+                                <li class="socials__list">
+                                    <a href="#" class="socials__link">Vk</a>
+                                </li>
+                                <li class="socials__list">
+                                    <a href="#" class="socials__link">Instagram</a>
+                                </li>
+                                <li class="socials__list">
+                                    <a href="#" class="socials__link">Linkedin</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="portfolio-feedback__form form">
+                            <form action="#" id="form" class="form__body">
+                                <div class="form__fields">
+                                    <div class="form__item">
+                                        <label for="formName" class="form__label">Телефон или почта</label>
+                                        <input id="formName" type="text" name="name" class="form__input">
+                                    </div>
+                                    <div class="form__item">
+                                        <label for="formNetworks" class="form__label">Выберите удобный способ связи</label>
+                                        <select name="networks" class="form__select">
+                                            <option value="Telegram" selected>Telegram</option>
+                                            <option value="WhatsApp">WhatsApp</option>
+                                            <option value="Viber">Viber</option>
+                                            <option value="телефон">Звонок на телефон</option>
+                                            <option value="SMS">SMS сообщение</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <button type="submit" class="form__button">Отправить</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>      
     </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__box">
+                <nav class="footer__navigation">
+                    <ul class="footer__nav">
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Обо мне</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Портфолио</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Этапы работ</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Цены</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Обратная связь</a>
+                        </li>
+                    </ul>
+                    <div class="footer__buttons">
+                        <a href="tel:+79237777777" class="footer__link header__link-phone">8 923 777-77-77</a>
+                        <a href="mailto:alexdev@gmail.com" class="footer__link footer__link-mail">alexdev@gmail.com</a>
+                    </div>
+                </nav>
+            </div>
+            <div class="footer__text">
+                <p class="footer__copy">&copy; 2020, Все права защищены</p>
+                <p class="footer__author">Сделано в рамках курса учебной платформы <a href="#" class="footer__blok">Frontend Blok</a></p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
