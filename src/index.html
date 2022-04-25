@@ -39,18 +39,7 @@
     <main>
         <section class="about">                
             <div class="container">
-                <div class="about__bg bg">
-                    <div class="bg__item"></div>
-                    <div class="bg__item"></div>
-                    <div class="bg__item"></div>
-                    <div class="bg__item"></div>
-                    <div class="bg__item"></div>
-                    <div class="bg__item"></div>
-                    <div class="bg__item"></div>
-                    <div class="bg__item"></div>
-                    <div class="bg__item"></div>
-                    <div class="bg__item"></div>
-                    <div class="bg__item"></div>
+                <div class="about__bg">
                 </div>
                 <div class="about__text">
                     <div class="figures">
@@ -218,7 +207,7 @@
                             </div>
                         </div>
                         <div class="portfolio-benefit__item">
-                            <img class="portfolio-benefit__img" src="/src/img/svg/money.svg" alt="money">
+                            <img class="portfolio-benefit__img" src="/src/img/svg/image-plus.svg" alt="image-plus">
                             <div class="portfolio-benefit__item-text">
                                 <span class="portfolio-benefit__title">FRONT-END</span>
                                 <div class="portfolio-benefit__description">
@@ -227,7 +216,7 @@
                             </div>
                         </div>
                         <div class="portfolio-benefit__item">
-                            <img class="portfolio-benefit__img" src="/src/img/svg/money.svg" alt="money">
+                            <img class="portfolio-benefit__img" src="/src/img/svg/clock.svg" alt="clock">
                             <div class="portfolio-benefit__item-text">
                                 <span class="portfolio-benefit__title">FRONT-END</span>
                                 <div class="portfolio-benefit__description">
@@ -236,7 +225,7 @@
                             </div>
                         </div>
                         <div class="portfolio-benefit__item">
-                            <img class="portfolio-benefit__img" src="/src/img/svg/money.svg" alt="money">
+                            <img class="portfolio-benefit__img" src="/src/img/svg/tel.svg" alt="tel">
                             <div class="portfolio-benefit__item-text">
                                 <span class="portfolio-benefit__title">FRONT-END</span>
                                 <div class="portfolio-benefit__description">
@@ -245,7 +234,7 @@
                             </div>
                         </div>
                         <div class="portfolio-benefit__item">
-                            <img class="portfolio-benefit__img" src="/src/img/svg/money.svg" alt="money">
+                            <img class="portfolio-benefit__img" src="/src/img/svg/code-json.svg" alt="code-json">
                             <div class="portfolio-benefit__item-text">
                                 <span class="portfolio-benefit__title">FRONT-END</span>
                                 <div class="portfolio-benefit__description">
@@ -254,7 +243,7 @@
                             </div>
                         </div>
                         <div class="portfolio-benefit__item">
-                            <img class="portfolio-benefit__img" src="/src/img/svg/money.svg" alt="money">
+                            <img class="portfolio-benefit__img" src="/src/img/svg/doc.svg" alt="doc">
                             <div class="portfolio-benefit__item-text">
                                 <span class="portfolio-benefit__title">FRONT-END</span>
                                 <div class="portfolio-benefit__description">
@@ -396,13 +385,21 @@
                                     </div>
                                     <div class="form__item">
                                         <label for="formNetworks" class="form__label">Выберите удобный способ связи</label>
-                                        <select name="networks" class="form__select">
-                                            <option value="Telegram" selected>Telegram</option>
-                                            <option value="WhatsApp">WhatsApp</option>
-                                            <option value="Viber">Viber</option>
-                                            <option value="телефон">Звонок на телефон</option>
-                                            <option value="SMS">SMS сообщение</option>
-                                        </select>
+                                        <div class="dropdown">
+                                            <div class="dropdown__title" data-default="Telegram">Telegram</div>
+                                            <div class="dropdown__content">
+                                                <input id="singleSelect0" class="dropdown__input" type="radio" name="singleSelect" checked />
+                                                <label for="singleSelect0" class="dropdown__label">Telegram</label>
+                                                <input id="singleSelect1" class="dropdown__input" type="radio" name="singleSelect" />
+                                                <label for="singleSelect1" class="dropdown__label">WhatsApp</label>
+                                                <input id="singleSelect2" class="dropdown__input" type="radio" name="singleSelect" />
+                                                <label for="singleSelect2" class="dropdown__label">Viber</label>
+                                                <input id="singleSelect3" class="dropdown__input" type="radio" name="singleSelect" />
+                                                <label for="singleSelect3" class="dropdown__label">Звонок на телефон</label>
+                                                <input id="singleSelect4" class="dropdown__input" type="radio" name="singleSelect" />
+                                                <label for="singleSelect4" class="dropdown__label">SMS сообщение</label>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                                 <button type="submit" class="form__button">Отправить</button>
