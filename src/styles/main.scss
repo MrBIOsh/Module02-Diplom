@@ -751,10 +751,12 @@ a {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: auto;
         row-gap: 6rem;
-        column-gap: 2rem;
+        -moz-column-gap: 2rem;
+             column-gap: 2rem;
         margin-bottom: var(--margin-b-l);
         @media (max-width: $r_tab) {
-            column-gap: 0;
+            -moz-column-gap: 0;
+                 column-gap: 0;
         }
     }
 
@@ -764,7 +766,8 @@ a {
         grid-template-columns: 0.9fr 1fr;
         grid-template-rows: auto;
         row-gap: 6rem;
-        column-gap: 5rem;
+        -moz-column-gap: 5rem;
+             column-gap: 5rem;
         position: relative;
         width: 56rem;
         @media (max-width: $r_tab) {
@@ -784,7 +787,8 @@ a {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: auto;
         padding: 3rem 0;
-        column-gap: 2rem;
+        -moz-column-gap: 2rem;
+             column-gap: 2rem;
         position: relative;
         align-items: center;
 
@@ -1031,7 +1035,8 @@ a {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             grid-template-rows: auto;
-            column-gap: 2rem;
+            -moz-column-gap: 2rem;
+                 column-gap: 2rem;
             row-gap: 8rem;
             justify-items: center;
             align-items: start;
@@ -1066,7 +1071,8 @@ a {
         }
 
         &__img {
-            object-fit: contain;
+            -o-object-fit: contain;
+               object-fit: contain;
             width: 40px;
             height: 40px;
 
@@ -1114,7 +1120,8 @@ a {
         &__img {
             mix-blend-mode: luminosity;
             opacity: .5;
-            object-fit: scale-down;
+            -o-object-fit: scale-down;
+               object-fit: scale-down;
             cursor: pointer;
 
             @media (max-width: $r_tab) {
@@ -1167,12 +1174,6 @@ a {
             grid-template-columns: repeat(2, 1fr);
             row-gap: 4rem;
         }
-
-        /*
-        &__subitem {
-            width: 100%;
-            max-width: 56rem;
-        }*/
         &__text {
             display: flex;
             flex-direction: column;
@@ -1207,11 +1208,13 @@ a {
             display: grid;
             grid-template-columns: auto 1fr;
             grid-column: 1/2 span;
-            column-gap: 8rem;
+            -moz-column-gap: 8rem;
+                 column-gap: 8rem;
             justify-items: center;
             align-items: center;
             @media (max-width: $r_mob_530) {
-                column-gap: 0;
+                -moz-column-gap: 0;
+                     column-gap: 0;
             }
         }
 
