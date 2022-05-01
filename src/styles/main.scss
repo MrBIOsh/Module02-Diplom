@@ -642,7 +642,7 @@ a {
 .toolkit {
     visibility: hidden;
     position: absolute;
-    top: 90%;
+    top: 93%;
     z-index: 99;
     opacity: 0;
     transform: scale(0);
@@ -673,7 +673,7 @@ a {
             content: '';
             position: absolute;
             left: calc(50% - 10px);
-            top: -20px;
+            top: -19px;
             border: 10px solid transparent;
             border-bottom: 10px solid $red-toolkit;
         }
@@ -1149,7 +1149,7 @@ a {
 
             @media (max-width: $r_tab) {
                 width: 35%;
-                height: 44%;
+                height: 50%;
             }
 
             &:hover {
