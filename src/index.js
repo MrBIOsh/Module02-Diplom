@@ -19,7 +19,7 @@ btnOpenModal.addEventListener('click', () => {
   modalWin.style.top = "0px";
   modalWin.style.zIndex = "10";
   darkLayer.style.opacity = '.8';
-  darkLayer.style.zIndex = '3';
+  darkLayer.style.zIndex = '9';
   document.addEventListener('touchmove', prevent, {passive: false});
   document.addEventListener('wheel', prevent, {passive: false});
 })
