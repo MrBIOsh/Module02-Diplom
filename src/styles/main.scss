@@ -170,6 +170,10 @@ a {
     max-width: 1140px;
     margin: 0 auto;
     padding: 0 15px;
+    
+    &-2 {
+        overflow: hidden;
+    }
     @media (max-width: $r_tab) {
         padding: 0 10px;
         max-width: 768px;
@@ -653,6 +657,15 @@ a {
         text-align: center;
         line-height: 1.5;
 
+        @media (max-width: $r_tab) {
+            padding: 2.4rem 1.3rem;
+            width: 15rem;
+        }
+        @media (max-width: $r_mob_530) {
+            padding: 2rem 1rem;
+            width: 12rem;
+        }
+
         ::before {
             content: '';
             position: absolute;
@@ -885,6 +898,7 @@ a {
 }
 
 .portfolio {
+
     &__text {
         margin-bottom: 14.4rem;
         position: relative;
@@ -942,7 +956,7 @@ a {
 
     &-case {
         background: linear-gradient(180deg, #141416 0%, rgba(20, 20, 22, 0) 100%);
-        margin-bottom: var(--margin-b-l);
+        margin-bottom: var(--margin-b-l);  
 
         &__text {
             margin-top: 3.9rem;
@@ -1488,7 +1502,7 @@ a {
         border: none;
         width: 20px;
         height: 20px;
-        top: 2rem;
+        top: 4rem;
         right: 2rem;
         cursor: pointer;
     }
@@ -1515,6 +1529,7 @@ a {
             justify-content: space-between;
             flex-direction: column;
             gap: 4rem;
+
             .socials {
                 &::after {
                     display: none;
@@ -1523,7 +1538,7 @@ a {
         }
 
         &__box {
-            padding: 8rem 0 4rem;
+            padding: 10rem 0 4rem;
             position: static;
         }
     
