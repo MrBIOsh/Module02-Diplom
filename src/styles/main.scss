@@ -1135,6 +1135,9 @@ a {
             @media (max-width: $r_tab) {
                 height: 10rem;
             }
+            @media (max-width: $r_mob_530) {
+                height: 7rem;
+            }
         }
 
         &__img {
@@ -1145,7 +1148,7 @@ a {
             cursor: pointer;
 
             @media (max-width: $r_tab) {
-                width: 23%;
+                width: 35%;
                 height: 44%;
             }
 
