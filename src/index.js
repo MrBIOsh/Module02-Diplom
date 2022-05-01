@@ -108,6 +108,28 @@ for (let k = 1; k < socials.length; k++) {
   }
 }
 
+//Scroll
+
+document.querySelector('.header__nav').querySelectorAll('a[href^="#"').forEach(link => {
+
+  link.addEventListener('click', function(e) {
+      e.preventDefault();
+
+      let href = this.getAttribute('href').substring(1);
+
+      const scrollTarget = document.getElementById(href);
+      const topOffset = 120;
+      const elementPosition = scrollTarget.getBoundingClientRect().top;
+      const offsetPosition = elementPosition - topOffset;
+      console.log(offsetPosition);
+
+      window.scrollBy({
+          top: offsetPosition,
+          behavior: 'smooth'
+      });
+  });
+});
+
 //PopUp
 
 for (let i = 0; i < popupBtn.length; i++) {
