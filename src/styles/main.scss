@@ -254,6 +254,9 @@ a {
 
     &__size-s {
         font-size: 1.4rem;
+        @media (max-width: $r_mob_430) {
+            font-size: 1.6rem;
+        }
     }
 
     &__size-m {
