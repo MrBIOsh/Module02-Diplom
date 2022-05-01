@@ -110,15 +110,15 @@ for (let k = 1; k < socials.length; k++) {
 
 //Scroll
 
-document.querySelector('.header__nav').querySelectorAll('a[href^="#"').forEach(link => {
-
-  link.addEventListener('click', function(e) {
+document.querySelectorAll('.header__nav, .footer__nav').forEach(nav => {
+  nav.querySelectorAll('a[href^="#"').forEach(link => {
+    link.addEventListener('click', function(e) {
       e.preventDefault();
 
       let href = this.getAttribute('href').substring(1);
 
       const scrollTarget = document.getElementById(href);
-      const topOffset = 120;
+      const topOffset = 100;
       const elementPosition = scrollTarget.getBoundingClientRect().top;
       const offsetPosition = elementPosition - topOffset;
       console.log(offsetPosition);
@@ -128,6 +128,7 @@ document.querySelector('.header__nav').querySelectorAll('a[href^="#"').forEach(l
           behavior: 'smooth'
       });
   });
+  })  
 });
 
 //PopUp
