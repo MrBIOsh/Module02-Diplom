@@ -1108,6 +1108,9 @@ a {
         &__description {
             width: 100%;
             max-width: 24.4rem;
+            @media (max-width: $r_mob_430) {
+                max-width: 34rem;
+            }
         }
     }
 
