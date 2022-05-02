@@ -565,7 +565,10 @@ a {
         color: $grey;        
         padding: 21px 19px;
         padding-right: 20rem;        
-        border: 1px solid rgba(243, 242, 240, 0);        
+        border: 1px solid rgba(243, 242, 240, 0);
+        @media (max-width: $r_mob_530) {
+            padding: 20px 19px;
+        }        
     }
 
     &__button {
