@@ -12,8 +12,11 @@ const modalWin = document.getElementById('modal');
 const prevent = ev => ev.preventDefault();
 const btnOpenModal = document.querySelector('.header').querySelector('.header__menu');
 const btnCloseModal = document.getElementById('modal').querySelector('.modal__btn-close');
+const forms = document.querySelectorAll('.form');
 
 //Modal Menu
+
+//Open modalWin by click on burger button
 
 btnOpenModal.addEventListener('click', () => {
   modalWin.style.top = "0px";
@@ -24,6 +27,8 @@ btnOpenModal.addEventListener('click', () => {
   document.addEventListener('wheel', prevent, {passive: false});
 })
 
+  //Close modalWin by click on cross
+
 btnCloseModal.addEventListener('click', () => {
   darkLayer.style.opacity = '0';
   darkLayer.style.zIndex = '-10';
@@ -31,6 +36,8 @@ btnCloseModal.addEventListener('click', () => {
   document.removeEventListener('touchmove', prevent);  
   document.removeEventListener('wheel', prevent);    
 })
+
+  //Close modalWin by click on shadow div
 
 document.getElementById('shadow').addEventListener('click', (evt) => {
   if (!evt.composedPath().includes(modalWin)) {
@@ -40,6 +47,18 @@ document.getElementById('shadow').addEventListener('click', (evt) => {
     document.removeEventListener('wheel', prevent);
     document.removeEventListener('touchmove', prevent);
   }
+})
+
+  //Close modalWin by link
+
+modalWin.querySelectorAll('.header__link').forEach(link => {
+  link.addEventListener('click', () => {
+    darkLayer.style.opacity = '0';
+    darkLayer.style.zIndex = '-10';
+    modalWin.style.top = "-580px";        
+    document.removeEventListener('touchmove', prevent);  
+    document.removeEventListener('wheel', prevent);  
+  })
 })
 
 //DropDown list
@@ -121,7 +140,6 @@ document.querySelectorAll('.header__nav, .footer__nav').forEach(nav => {
       const topOffset = 100;
       const elementPosition = scrollTarget.getBoundingClientRect().top;
       const offsetPosition = elementPosition - topOffset;
-      console.log(offsetPosition);
 
       window.scrollBy({
           top: offsetPosition,
@@ -140,6 +158,7 @@ for (let i = 0; i < popupBtn.length; i++) {
     darkLayer.style.opacity = '.8';
     darkLayer.style.zIndex = '3';
     document.addEventListener('wheel', prevent, {passive: false});
+    document.addEventListener('touchmove', prevent, {passive: false});
   })
 }
 
@@ -149,6 +168,7 @@ popupBtnClose.addEventListener('click', () => {
   darkLayer.style.opacity = '0';
   darkLayer.style.zIndex = '-10';
   document.removeEventListener('wheel', prevent);
+  document.removeEventListener('touchmove', prevent);
 })
 
 document.getElementById('shadow').addEventListener('click', (evt) => {
@@ -158,6 +178,43 @@ document.getElementById('shadow').addEventListener('click', (evt) => {
     darkLayer.style.opacity = '0';
     darkLayer.style.zIndex = '-10';
     document.removeEventListener('wheel', prevent);
+    document.removeEventListener('touchmove', prevent);
   }
 })
+
+// Validation
+
+document.addEventListener('DOMContentLoaded', () => {
+
+  forms.forEach(form => {
+
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      let formInput = form.querySelector('.form__input'); 
+
+      if (formInput == "") {
+        formInput.style.border = "1px solid rgba(243, 242, 240, 0)";
+      } else { 
+        if ((!emailTest(formInput)) && (!telTest(formInput))) {
+        formInput.style.border = "1px solid rgb(234, 14, 0)";
+          formInput.onfocus = () => {
+            if (getComputedStyle(formInput).border == "1px solid rgb(234, 14, 0)") {
+                formInput.style.border = "1px solid rgba(243, 242, 240, 0)";
+                formInput.value = "";
+            }
+          }
+        }
+      }
+
+      function emailTest(formInput) {
+        return /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,5})+$/.test(formInput.value);
+      }
+      
+      function telTest(formInput) {
+        return /^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$/.test(formInput.value);
+      }
+
+    })
+  })  
+});
 

@@ -53,6 +53,9 @@ html {
     @media (max-width: $r_mob_530) {
         font-size: 7.5px;
     }
+    @media (max-width: $r_mob_360) {
+        font-size: 2.1vw;
+    }
 }
 
 body {
@@ -107,6 +110,20 @@ a {
         font-weight: 400;
     }
 
+    &__buttons {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        --gap-link: 2.6rem;
+        gap: var(--gap-link);
+        flex-grow: 1;
+        font-size: 14px;
+
+        @media (max-width: $r_tab) {
+            justify-content: space-between;
+        }
+    }
+
     &__link {
         text-decoration: none;
         color: $grey;
@@ -118,8 +135,8 @@ a {
                 content: '';
                 width: 1px;
                 height: 24px;
-                position: absolute;
-                right: -1.3rem;
+                position: absolute;                
+                right: calc(-1*var(--gap-link)*0.5);
                 top: -.4rem;
                 background-color: $grey;
                 pointer-events: none;
@@ -135,19 +152,6 @@ a {
             @media (max-width: $r_tab) {
                 display: none;
             }
-        }
-    }
-
-    &__buttons {
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-        gap: 2.6rem;
-        flex-grow: 1;
-        font-size: 14px;
-
-        @media (max-width: $r_tab) {
-            justify-content: space-between;
         }
     }
 
@@ -369,6 +373,11 @@ a {
         top: -9rem;
     }
 
+    @media (max-width: $r_mob_360) {
+        top: -67.5px;
+        left: -67.5px;
+    }
+
     &_feedback {
         top: -3rem;
         left: -15rem;
@@ -408,6 +417,13 @@ a {
             width: 8.5rem;
         }
 
+        @media (max-width: $r_mob_360) {
+            top: 138.75px;
+            left: 56px;
+            width: 63.75px;
+            height: 63.75px;
+        }
+
         &_feedback {
             top: 5.5rem;
             left: -2.5rem;
@@ -441,17 +457,19 @@ a {
         }
         @media (max-width: $r_mob_530) {
             transform: scale(.5);
-            left: -5.5rem;
-            top: -3rem;
+            left: -41.25px;
+            top: -22.5px;
+            width: 262.5px;
+            height: 262.5px;
         }
 
         &_feedback {
             @media (max-width: $r_mob_530) {                
-                width: 40rem;
-                height: 40rem;
+                width: 300px;
+                height: 300px;
                 transform: scale(.65);
-                left: -5.5rem;
-                top: -3rem;
+                left: -41.25px;
+                top: -22.5px;
             }
         }
     }
@@ -535,14 +553,19 @@ a {
     &__button {
         border: none;
         outline: none;
-        padding: 2.3rem 2rem;
+        padding: 22px 20px;
         line-height: 1.5;
+        @media (max-width: $r_mob_530) {
+            padding: 21px 20px;
+        }
     }
 
     &__input {
         background-color: rgba(243, 242, 240, .1);
-        color: $grey;
-        padding-right: 20rem;
+        color: $grey;        
+        padding: 21px 19px;
+        padding-right: 20rem;        
+        border: 1px solid rgba(243, 242, 240, 0);        
     }
 
     &__button {
@@ -573,16 +596,22 @@ a {
         }
 
         .dropdown__label {
-            max-height: 40px;
+            max-height: 45px;
+            @media (max-width: $r_mob_530) {
+                max-height: 40px;
+            }
         }
     }
 
     &__title {
         display: flex;
         justify-content: space-between;
-        align-items: center;
-        padding: 2.3rem 2rem;
+        align-items: center;        
+        padding: 22px 20px;
         cursor: pointer;
+        @media (max-width: $r_mob_530) {
+            padding: 21px 20px;
+        }
 
         &::after {
             content: "";
@@ -599,7 +628,7 @@ a {
 
     &__content {
         position: absolute;
-        top: 6.7rem;
+        top: 6rem;
         left: 0;
         display: flex;
         flex-direction: column;
@@ -608,6 +637,10 @@ a {
         transition: all 0.3s ease-out;
         opacity: 0;
         z-index: 8;
+        padding-bottom: 1rem;
+        @media (max-width: $r_mob_530) {
+            top: 7rem;
+        }
     }
 
     &__input {
@@ -618,8 +651,8 @@ a {
     &__label {
         display: flex;
         align-items: center;
-        height: 40px;
-        padding-left: 2rem;
+        height: 50px;
+        padding-left: 20px;
         max-height: 0;
         transition: all 0.2s ease-out;
         cursor: pointer;
@@ -696,10 +729,10 @@ a {
     &__bg {
         height: 31rem;
         width: 100%;
-        background-image: url(../img/bg_header-1.jpg);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
+        -o-object-fit: cover;
+           object-fit: cover;
+        -o-object-position: center;
+           object-position: center;
         margin-bottom: 12rem;
     }
 
@@ -997,6 +1030,9 @@ a {
         &__time-work {
             opacity: 1;
             padding-bottom: 4rem;
+            @media (max-width: $r_mob_530) {
+                padding-bottom: 1rem;
+            }
         }
 
         &__img {
@@ -1360,6 +1396,19 @@ a {
         font-weight: 400;
     }
 
+    &__buttons {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        --gap-link: 2.6rem;
+        gap: var(--gap-link);
+        flex-grow: 1;
+
+        @media (max-width: $r_tab) {
+            order: -1;
+        }
+    }
+
     &__link {
         text-decoration: none;
         color: $grey;
@@ -1371,25 +1420,16 @@ a {
                 content: '';
                 width: 1px;
                 height: 24px;
-                position: absolute;
-                right: -1.3rem;
+                position: absolute;                
+                right: calc(-1*var(--gap-link)*0.5);
                 top: -.4rem;
                 background-color: $grey;
                 pointer-events: none;
                 opacity: .5;
+                @media (max-width: $r_mob_530) {
+                    top: -.8rem;
+                }
             }
-        }
-    }
-
-    &__buttons {
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-        gap: 2.6rem;
-        flex-grow: 1;
-
-        @media (max-width: $r_tab) {
-            order: -1;
         }
     }
 
@@ -1430,7 +1470,7 @@ a {
     visibility: hidden;
     width: 85%;
     max-width: 56rem;
-    padding: 5.5rem 2rem 4rem;
+    padding: 7rem 2rem 4rem;
     margin: 0 auto;
     background-color: $dark-bg;
     position: fixed;
@@ -1457,8 +1497,8 @@ a {
 
     &__text {
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(2, 1fr);
-        row-gap: 0;
+        grid-template-rows: repeat(2, .5fr);
+        row-gap: 1.5rem;
         margin-bottom: 2rem;
         padding-bottom: 3rem;
     }
@@ -1479,6 +1519,9 @@ a {
         width: 100%;
         max-width: 32rem;
         text-align: center;
+        @media (max-width: $r_mob_360) {
+            max-width: 30rem;
+        }
     }
 }
 

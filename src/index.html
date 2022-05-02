@@ -40,8 +40,7 @@
     <main>
         <section class="about">                
             <div class="container">
-                <div class="about__bg">
-                </div>
+                <img class="about__bg" src="img/bg_header-1.jpg" alt="bg-img">
                 <div class="about__text">
                     <div class="figures">
                         <svg class="figures__triangle">
@@ -373,7 +372,7 @@
                         </div>
                         <div class="portfolio-tariff__box">
                             <button type="button" class="btn-popup">Обсудить проект</button>
-                            <span class="portfolio-tariff__price portfolio-tariff__price_unactive">От 7 000 Р</span>
+                            <span class="portfolio-tariff__price portfolio-tariff__price_unactive">От 10 000 Р</span>
                         </div>
                     </div>
                     <div class="portfolio-tariff__item box">
@@ -393,7 +392,7 @@
                         </div>
                         <div class="portfolio-tariff__box">
                             <button type="button" class="btn-popup">Обсудить проект</button>
-                            <span class="portfolio-tariff__price">От 7 000 Р</span>
+                            <span class="portfolio-tariff__price">От 15 000 Р</span>
                         </div>
                     </div>
                 </div>
@@ -433,7 +432,7 @@
                                 <div class="form__fields">
                                     <div class="form__item">
                                         <label for="formName" class="form__label">Телефон или почта</label>
-                                        <input id="formName" type="text" name="name" class="form__input">
+                                        <input id="formName" type="text" name="name" class="form__input" placeholder="Введите телефон" autocomplete="off">
                                     </div>
                                     <div class="form__item">
                                         <span class="form__label">Выберите удобный способ связи</span>
@@ -504,19 +503,19 @@
                     <nav class="header__navigation">
                         <ul class="header__nav">
                             <li class="header__item">
-                                <a href="#" class="header__link">Обо мне</a>
+                                <a href="#about" class="header__link">Обо мне</a>
                             </li>
                             <li class="header__item">
-                                <a href="#" class="header__link">Портфолио</a>
+                                <a href="#portfolio" class="header__link">Портфолио</a>
                             </li>
                             <li class="header__item">
-                                <a href="#" class="header__link">Этапы работ</a>
+                                <a href="#stepwork" class="header__link">Этапы работ</a>
                             </li>
                             <li class="header__item">
-                                <a href="#" class="header__link">Цены</a>
+                                <a href="#price" class="header__link">Цены</a>
                             </li>
                             <li class="header__item">
-                                <a href="#" class="header__link">Обратная связь</a>
+                                <a href="#feedback" class="header__link">Обратная связь</a>
                             </li>
                         </ul>
                     </nav>
@@ -545,15 +544,15 @@
     <div class="popup" id="popup">
         <button class="popup__btn-close" type="button"></button>
         <div class="popup__text box">
-            <h4 class="popup__title">Расскажите о своем проекте</h4>
-            <p class="popup__description description__size-m">Заполните все поля, и я свяжусь с вами в ближайшее время</p>
+            <h4 class="popup__title">Расскажите о&nbsp;своем&nbsp;проекте</h4>
+            <p class="popup__description description__size-m">Заполните все поля, и я свяжусь с&nbsp;вами в ближайшее время</p>
         </div>
         <div class="popup__form form">
             <form action="#" class="form__body">
                 <div class="form__fields">
                     <div class="form__item">
                         <label for="formName" class="form__label">Телефон или почта</label>
-                        <input type="text" name="name" class="form__input">
+                        <input type="text" name="name" class="form__input" placeholder="Введите телефон" autocomplete="off">
                     </div>
                     <div class="form__item">
                         <span class="form__label">Выберите удобный способ связи</span>
